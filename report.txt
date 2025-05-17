@@ -1,0 +1,94 @@
+Starting diagnostics at 2025-05-16 18:22:56
+
+===== System Information =====
+Operating System: Darwin
+MacOS Version: 15.4.1
+Architecture: ('64bit', '')
+Machine: arm64
+Processor: arm
+Total RAM: 8.00 GB
+Available RAM: 1.56 GB
+WARNING: Low available RAM: 1.56 GB
+Free Disk Space: 18.61 GB
+
+===== File System Information =====
+Current Directory: /Users/amarnagargoje/Documents/genai-projects/autonomous_traders_mcp
+Write permission: OK
+
+Files in Parent Directory:
+ - .DS_Store
+ - 1737204594141.pdf
+ - 2025-odsc-east-workshop
+ - AIAdsGenerator
+ - AWS ML Guide.pdf
+ - AgenticRAG-DeepSeek
+ - Awesome-MCP-Server
+ - PromptCraft- Evaluating and Optimizing Prompt Strategies in LLMs
+ - RAG process.png
+ - action
+ - ads generator.rar
+ - agents
+ - ai-engineering-hub
+ - ai-travel-agent-2.zip
+ - autonomous_traders_mcp
+ - code-generator-using-vllm
+ - decentralizedAI
+ - diabeties aware recomm sys
+ - extract-anything
+ - genai-stack
+ - image-gen
+ - langgraph-ai-agent-fastapi
+ - music assistant
+ - parallelized-image-captioner-pytorch
+ - recipt recogination
+ - sentement analysis.zip
+ - servers
+ - shopping-multimodal-rag
+ - slack-mcp
+ - sse-mcp
+ - stackoverflow-graph-rag
+
+===== Git Repository Information =====
+Git Repository Root: /Users/amarnagargoje/Documents/genai-projects/autonomous_traders_mcp
+Current Commit: 59d8a9bb82350b1fdb6eeb0a7a6f8f12fff63dd0
+Remote Origin: https://github.com/iaamar/AutonomousTrader.git
+
+===== Environment File Check =====
+WARNING: .env file not found in project root
+
+===== Virtualenv Check =====
+ERROR: Virtualenv check failed: expected str, bytes or os.PathLike object, not NoneType
+
+===== Network Connectivity Check =====
+SSL Version: OpenSSL 3.5.0 8 Apr 2025
+ERROR: Required packages are not installed. Please install them using 'pip install requests speedtest-cli'
+
+===== Environment Variables Check =====
+
+PYTHONPATH is not set, as expected.
+
+Python sys.path:
+ - /Users/amarnagargoje/Documents/genai-projects/autonomous_traders_mcp
+ - /Users/amarnagargoje/.pyenv/versions/3.12.2/lib/python312.zip
+ - /Users/amarnagargoje/.pyenv/versions/3.12.2/lib/python3.12
+ - /Users/amarnagargoje/.pyenv/versions/3.12.2/lib/python3.12/lib-dynload
+ - /Users/amarnagargoje/.pyenv/versions/3.12.2/lib/python3.12/site-packages
+WARNING: OPENAI_API_KEY environment variable is not set after calling load_dotenv()
+
+===== Additional Diagnostics =====
+Temp directory is writable: /var/folders/cm/b30xjq2s5jdb10fm0cqmq_4c0000gn/T
+
+===== Warnings Found =====
+The following warnings were detected. They might not prevent the program from running but could cause unexpected behavior:
+- Low available RAM: 1.56 GB
+- .env file not found in project root
+- OPENAI_API_KEY environment variable is not set after calling load_dotenv()
+
+===== Errors Found =====
+The following critical issues were detected. Please address them before proceeding:
+- Virtualenv check failed: expected str, bytes or os.PathLike object, not NoneType
+- Required packages are not installed. Please install them using 'pip install requests speedtest-cli'
+
+
+Completed diagnostics at 2025-05-16 18:22:57
+
