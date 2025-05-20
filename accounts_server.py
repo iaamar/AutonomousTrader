@@ -1,5 +1,6 @@
 from mcp.server.fastmcp import FastMCP
 from accounts import Account
+import mcp
 
 mcp = FastMCP("accounts_server")
 
