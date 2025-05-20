@@ -36,7 +36,7 @@ class Account(BaseModel):
     @classmethod
     def get(cls, name: str):
         fields = read_account(name.lower())
-        if not fields:
+        if not fields or fields is None:
             fields = {
                 "name": name.lower(),
                 "balance": INITIAL_BALANCE,

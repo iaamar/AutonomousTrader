@@ -7,21 +7,21 @@ load_dotenv(override=True)
 
 DB = "accounts.db"
 
-
-with sqlite3.connect(DB) as conn:
-    cursor = conn.cursor()
-    cursor.execute('CREATE TABLE IF NOT EXISTS accounts (name TEXT PRIMARY KEY, account TEXT)')
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS logs (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT,
-            datetime DATETIME,
-            type TEXT,
-            message TEXT
-        )
-    ''')
-    cursor.execute('CREATE TABLE IF NOT EXISTS market (date TEXT PRIMARY KEY, data TEXT)')
-    conn.commit()
+def init_db():
+    with sqlite3.connect(DB) as conn:
+        cursor = conn.cursor()
+        cursor.execute('CREATE TABLE IF NOT EXISTS accounts (name TEXT PRIMARY KEY, account TEXT)')
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS logs (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT,
+                datetime DATETIME,
+                type TEXT,
+                message TEXT
+            )
+        ''')
+        cursor.execute('CREATE TABLE IF NOT EXISTS market (date TEXT PRIMARY KEY, data TEXT)')
+        conn.commit()
 
 def write_account(name, account_dict):
     json_data = json.dumps(account_dict)
