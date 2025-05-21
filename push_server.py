@@ -20,7 +20,7 @@ class PushModelArgs(BaseModel):
 def push(args: PushModelArgs):
     """ Send a push notification with this brief message """
     print(f"Push: {args.message}")
-    payload = {"user": pushover_user, "token": pushover_token, "message": args.message}
+    payload = {"message": args.message}
     requests.post(pushover_url, data=payload)
 
 if __name__ == "__main__":

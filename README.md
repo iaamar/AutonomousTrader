@@ -68,10 +68,11 @@ python market_server.py
 python accounts_server.py
 ```
 
-3. Run the main application:
+3. Run the push server:
 ```bash
-python main.py
+python push_server.py
 ```
+4. Finally run ```app.ipynb``` to see output
 
 ## Project Structure
 
